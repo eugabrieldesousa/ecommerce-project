@@ -141,3 +141,11 @@ nav {
   font-weight: 500;
   padding: 1rem 5rem;
 }
+
+.logos {
+  padding: 6rem;
+}
+
+.logos img {
+  width: 100%;
+}
