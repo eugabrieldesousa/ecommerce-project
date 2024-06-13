@@ -75,10 +75,15 @@ nav {
 .container {
   display: grid;
   grid-template-areas:
-    "left up up right" "left cta cta right" "left cta cta right"
+    "left up up right" "left cta cta right"
     "left down down right";
   margin: 1rem 0;
   padding: 0 10%;
+  gap: 2rem;
+}
+
+.container img {
+  width: 100%;
 }
 
 .bg-left {
@@ -100,23 +105,39 @@ nav {
   grid-area: down;
 }
 
+.bg {
+  border-radius: 1rem;
+}
+
 .cta {
   grid-area: cta;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
+  gap: 1.3rem;
+  align-items: center;
+  padding: 1rem;
 }
 
 .cta h1 {
   font-size: 91px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .cta span {
   font-size: 187px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--preto-principal);
+}
+
+.cta h3 {
+  text-transform: uppercase;
 }
 
 .bt-shopnow {
   text-transform: uppercase;
   font-weight: 500;
+  padding: 1rem 5rem;
 }
