@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiasco</title>
     <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
@@ -27,16 +31,16 @@
     </header>
     <main class="container">
       <div class="bg-left bg">
-        <img src="/assets/css/img/image 2 28 (1).png" alt="" />
+        <img src="/assets/img/image 2 28 (1).png" alt="" />
       </div>
       <div class="bg-up bg">
-        <img src="/assets/css/img/image (2).png" alt="" />
+        <img src="/assets/img/image (2).png" alt="" />
       </div>
       <div class="bg-right bg">
-        <img src="/assets/css/img/image 227.png" alt="" />
+        <img src="/assets/img/image 227.png" alt="" />
       </div>
       <div class="bg-down bg">
-        <img src="/assets/css/img/image (3).png" alt="" />
+        <img src="/assets/img/image (3).png" alt="" />
       </div>
       <div class="cta">
         <h1>ultimate <br /><span>sale</span></h1>
@@ -45,7 +49,70 @@
       </div>
     </main>
     <section class="logos">
-      <img src="./assets/css/img/logos.png" alt="" />
+      <img src="/assets/img/logos.png" alt="" />
     </section>
+    <section class="deals">
+      <div class="deals-left">
+        <div class="deals-text">
+          <h2>Deals OF The Month</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
+          </p>
+          <a class="button" href="">Buy Now</a>
+        </div>
+        <div class="deals-count">
+          <h2>Hurry, Before It's Too Late!</h2>
+          <div class="count">
+            <div class="card">
+              <div class="card-number">02</div>
+              <h3>Days</h3>
+            </div>
+            <div class="card">
+              <div class="card-number">06</div>
+              <h3>Hr</h3>
+            </div>
+            <div class="card">
+              <div class="card-number">05</div>
+              <h3>Mins</h3>
+            </div>
+            <div class="card">
+              <div class="card-number">30</div>
+              <h3>Sec</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deals-right">
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/img/image (5).png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/image (6).png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/image (7).png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
